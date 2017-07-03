@@ -1,0 +1,7 @@
+*.txt
+*.elf
+*.bin
+*.o
+*.lst
+tags
+*.swp
