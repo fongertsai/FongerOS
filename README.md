@@ -12,7 +12,7 @@
 # Build
 	make all
 	
-# Run
+# Run simulation
 	./run.sh
 
 # TODO
