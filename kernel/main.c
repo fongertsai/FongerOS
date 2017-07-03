@@ -35,7 +35,7 @@ int main(void)
 	enable_rs232_interrupts();
 	enable_rs232();
 	rs232_print_str("Hello World ! This is FongerOS\n\r");
-	rs232_print_str("Wellcome to Lab447...\n\r");
+	rs232_print_str("Type \"help\" to display all commands \n\r");
 
 	hclk_ticks_per_sec = SystemCoreClock;
 	ext_clock_ticks_per_sec = hclk_ticks_per_sec / 8;
