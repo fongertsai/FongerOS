@@ -1,5 +1,5 @@
 # FongerOS
-FongerOS ported to stm32_p103, based on ARM Cortex-M3
+FongerOS a multitasking operating system, ported to stm32_p103, based on ARM Cortex-M3
 
 
 # Prerequisites
@@ -14,3 +14,12 @@ FongerOS ported to stm32_p103, based on ARM Cortex-M3
 	
 # Run
 	./run.sh
+
+# TODO
+	IPC
+	mutex_lock
+	priority queue
+	...
+	
+# Reference
+	
