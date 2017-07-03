@@ -1,5 +1,5 @@
 # FongerOS
-FongerOS a multitasking operating system, ported to stm32_p103, based on ARM Cortex-M3
+FongerOS, a multitasking operating system, ported to stm32_p103, based on ARM Cortex-M3
 
 
 # Prerequisites
