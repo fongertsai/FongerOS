@@ -5,3 +5,4 @@
 *.lst
 tags
 *.swp
+qemu*
