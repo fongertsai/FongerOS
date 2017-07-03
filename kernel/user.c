@@ -17,7 +17,7 @@ struct command commands[] =
 {
 	{ "help", "Display this list of commands", print_help },
 	{ "tick", "Display system tick", print_tick },
-	{ "ps", "ps in system", ps },
+	{ "ps", "PCB status in system", ps },
 	{ "fork", "fork", fork }
 };
 
@@ -75,14 +75,19 @@ void print_help()
 void ps()
 {
     int i;
+    char tmp[5];
     for (i = 0; i < TASK_LIMIT; i++) {
+	int2char(tmp, i);
+	rs232_print_str(tmp);
+	rs232_print_str("\t");
         if (tasks[i].used == 1) {
-            char tmp[5];
-	    int2char(tmp, i);
-            rs232_print_str("USED PCB: ");
-            rs232_print_str(tmp);
+            rs232_print_str("USED");
             rs232_print_str("\n\r");
-        }   
+        } 
+	else {
+            rs232_print_str("EMP");
+            rs232_print_str("\n\r");
+	} 
 
     }   
 }
